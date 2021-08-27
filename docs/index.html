@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<title>Zalando Tech Radar</title>
+<title>NDA NWS PMO Tech Radar</title>
 <link rel="shortcut icon" href="https://www.zalando.de/favicon.ico">
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -25,12 +25,12 @@ radar_visualization({
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Zalando Tech Radar — 2021.06",
+  title: "NDA Waste Division PMO Implementation: Tech Radar",
   quadrants: [
-    { name: "Languages" },
-    { name: "Infrastructure" },
-    { name: "Datastores" },
-    { name: "Data Management" },
+    { name: "BI" },
+    { name: "Automation" },
+    { name: "Data" },
+    { name: "Analytics" },
   ],
   rings: [
     { name: "ADOPT", color: "#93c47d" },
@@ -44,246 +44,137 @@ radar_visualization({
   entries: [
       {
         "quadrant": 2,
-        "ring": 0,
-        "label": "AWS DynamoDB",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Exasol",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Redis",
-        "link": "https://engineering.zalando.com/tags/redis.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Aerospike",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "Amazon Redshift",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Hazelcast",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Oracle DB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "ZooKeeper",
+        "ring": 2,
+        "label": "Azure Data Factory",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
         "ring": 2,
-        "label": "Google Bigtable",
+        "label": "Azure Purview",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
         "ring": 2,
-        "label": "RocksDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Cassandra",
-        "link": "https://engineering.zalando.com/tags/cassandra.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "HDFS",
+        "label": "Azure Data Warehouse",
+        "link": "",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
         "ring": 3,
-        "label": "Solr",
+        "label": "Databricks",
         "active": true,
-        "moved": -1
+        "moved": 0
       },
       {
         "quadrant": 2,
-        "ring": 0,
+        "ring": 3,
+        "label": "Snowflake",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Neo4j",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Neo4j_Bloom",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 3,
+        "label": "Azure Data Catalogue",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "NDA_asset_inventory",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 3,
+        "label": "Spreadsheets",
+        "active": true,
+        "moved": 0
+      },
+            {
+        "quadrant": 2,
+        "ring": 1,
         "label": "AWS S3",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "etcd",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Memcached",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "PostgreSQL",
-        "link": "https://engineering.zalando.com/tags/postgresql.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "HBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MongoDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Elasticsearch",
-        "link": "https://engineering.zalando.com/tags/elasticsearch.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "CouchBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Consul",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MySQL",
-        "active": true,
-        "moved": 0
-      },
-      {
         "quadrant": 3,
         "ring": 0,
-        "label": "Databricks",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "YARN",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Presto",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Airflow",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Flink",
-        "link": "https://engineering.zalando.com/tags/apache-flink.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "AWS Data Pipeline",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Google BigQuery",
+        "label": "Oracle P6",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 3,
         "ring": 2,
-        "label": "AWS Glue",
+        "label": "DataRobot ML",
         "active": true,
-        "moved": 1
+        "moved": 0
       },
       {
         "quadrant": 3,
         "ring": 0,
-        "label": "AWS EMR",
+        "label": "Present Monte Carlo",
+        "active": true,
+        "moved": -1
+      },
+      {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "Present SED tool",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 3,
         "ring": 3,
-        "label": "Hadoop",
+        "label": "Sci Kit Learn",
         "active": true,
-        "moved": -1
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 3,
+        "label": "Keras",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 3,
+        "label": "DABL",
+        "active": true,
+        "moved": 0
       },
       {
         "quadrant": 3,
         "ring": 2,
-        "label": "AWS Athena",
+        "label": "Schedule Audit TBA",
         "active": true,
-        "moved": 1
+        "moved": 0
       },
       {
         "quadrant": 3,
